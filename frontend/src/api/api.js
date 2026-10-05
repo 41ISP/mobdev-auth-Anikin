@@ -12,6 +12,11 @@ const registerUser = async (user) =>
         const res = await apiInstance.post('/auth/register', user)
         return res  
     }
+const loginUser = async (user) => 
+    {
+        const res = await ApiiInstance.post('/auth/login',user)
+        return res
+    }
     export const api = 
     {
         registerUser: registerUser
